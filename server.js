@@ -19,7 +19,7 @@ var optionsGET = {
 var optionsSET = {
 	hostname: '192.168.96.227',
 	port: 80,
-	path: '/api/meteorlite/lights/2/state',
+	path: '/api/meteorlite/lights/3/state',
 	method: 'PUT'
 };
 
@@ -84,8 +84,8 @@ function get_weather() {
       
 	req.end();
 }
-// do this every 5 seconds or whatever
-setInterval(get_weather, 5000);
+// Update every 2 minutes
+setInterval(get_weather, 120000);
 
 // start the server
 function start() {

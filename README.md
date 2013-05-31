@@ -1,6 +1,7 @@
 meteorlite
 ==========
 
-Hue + Dark Sky
+Simple Node app to get the current temperature and change the hue on your Hue lights accordingly.
 
-192.168.96.227
+To run:
+    node index.js
